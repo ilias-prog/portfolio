@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ilias Azem Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <nav aria-label="Main">
+    <a class="brand" href="#top">Ilias Azem</a>
+    <ul>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="top">
+    <div>
+      <p class="label">Ilias Azem · Web developer · Marrakech</p>
+      <h1 style="margin-top:14px">I build websites that are fast, clear and <em>easy to maintain.</em></h1>
+      <p class="lead">I am a third-year computer science student in Marrakech. I build front ends with HTML, CSS, JavaScript and React, and back ends with PHP and Java.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="https://github.com/ilias-prog" target="_blank" rel="noopener">GitHub profile</a>
+      </div>
+    </div>
+    <aside class="now" aria-label="Quick facts">
+      <p class="label">At a glance</p>
+      <dl>
+        <dt>front end</dt><dd>HTML, CSS, JavaScript, React</dd>
+        <dt>styling</dt><dd>Tailwind CSS, Bootstrap</dd>
+        <dt>back end</dt><dd>PHP, Java</dd>
+        <dt>workflow</dt><dd>Git and GitHub</dd>
+        <dt>studying</dt><dd>Licence in Computer Development, year 3</dd>
+        <dt>location</dt><dd>Marrakech, Morocco</dd>
+      </dl>
+    </aside>
+  </header>
+
+  <section id="skills">
+    <div class="sec-head">
+      <h2>Skills</h2>
+      <p>Pick a skill to see the projects where I used it.</p>
+    </div>
+    <div class="groups" id="groups"></div>
+    <p class="hint">Selecting several skills shows projects that use all of them.</p>
+  </section>
+
+  <section id="projects">
+    <div class="sec-head">
+      <h2>Projects</h2>
+      <p>Repositories from my GitHub account, including coursework and team projects.</p>
+    </div>
+    <div class="status">
+      <span class="count" id="count" aria-live="polite"></span>
+      <button class="linkbtn" id="clear" type="button" hidden>Show all projects</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="about">
+    <div class="sec-head"><h2>About</h2></div>
+    <div class="about">
+      <div>
+        <p>I am Ilias Azem, a third-year student in the Licence in Computer Development at the Faculty of Science and Technology in Marrakech, Morocco.</p>
+        <p>I like turning an idea into a page people can use. I write HTML and CSS for the structure and style, JavaScript and React for behaviour, and PHP and Java for the server side. My projects, including team work from my courses, are on GitHub.</p>
+      </div>
+      <div>
+        <p class="label" style="margin-bottom:14px">My stack, from screen to server</p>
+        <div class="stack">
+          <div class="layer">
+            <h3>Interface</h3>
+            <p class="what">What visitors see: structure, style and layout.</p>
+            <div class="techs">
+              <button type="button" class="tech" data-skill="HTML">HTML</button>
+              <button type="button" class="tech" data-skill="CSS">CSS</button>
+              <button type="button" class="tech" data-skill="Tailwind">Tailwind CSS</button>
+              <button type="button" class="tech" data-skill="Bootstrap">Bootstrap</button>
+            </div>
+          </div>
+          <div class="layer">
+            <h3>Behaviour</h3>
+            <p class="what">What reacts when someone clicks, types or scrolls.</p>
+            <div class="techs">
+              <button type="button" class="tech" data-skill="JavaScript">JavaScript</button>
+              <button type="button" class="tech" data-skill="React">React</button>
+            </div>
+          </div>
+          <div class="layer">
+            <h3>Logic</h3>
+            <p class="what">What runs on the server: data, accounts and rules.</p>
+            <div class="techs">
+              <button type="button" class="tech" data-skill="PHP">PHP</button>
+              <button type="button" class="tech" data-skill="Java">Java</button>
+            </div>
+          </div>
+          <div class="layer">
+            <h3>History</h3>
+            <p class="what">Where every change is saved and shared with a team.</p>
+            <div class="techs">
+              <span class="tech">Git</span>
+              <button type="button" class="tech" data-skill="GitHub">GitHub</button>
+            </div>
+          </div>
+        </div>
+        <p class="hint">Click a technology to jump to the projects that use it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="sec-head">
+      <h2>Contact</h2>
+      <p>Have a project, an internship or an opening? Reach me any of these ways.</p>
+    </div>
+    <div class="contact-list">
+      <div class="crow">
+        <span class="label">Email</span>
+        <span class="addr">iliasazem980@gmail.com</span>
+        <button class="btn copy" type="button" data-copy="iliasazem980@gmail.com">Copy</button>
+      </div>
+      <div class="crow">
+        <span class="label">Phone</span>
+        <span class="addr">+212 654 791 846</span>
+        <button class="btn copy" type="button" data-copy="+212654791846">Copy</button>
+      </div>
+      <div class="crow">
+        <span class="label">GitHub</span>
+        <a class="addr" href="https://github.com/ilias-prog" target="_blank" rel="noopener">github.com/ilias-prog</a>
+        <button class="btn copy" type="button" data-copy="https://github.com/ilias-prog">Copy</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Ilias Azem · Marrakech, Morocco</span>
+    <span>Built with HTML, CSS and JavaScript</span>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
